@@ -1,6 +1,6 @@
 # Petites indications sur la Polymorphic Association...
 
-## Pour créer un commentaire sur un Link
+## Pour créer un commentaire sur un Link (sans oublier les paramètres propres à chacun)
 
 Créer un User (`julie = User.new`) et lui associer un Link (`coucou = Link.new`)
 
@@ -20,3 +20,4 @@ Puis associer super à salut
 
 Et voilà :)
 
+PS : pour le Regex, j'ai forcé le format HTTP/HTTPS, c'est peut être un peu trop drastique ;)
