@@ -1,24 +1,22 @@
-# README
+# Petites indications sur la Polymorphic Association...
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pour créer un commentaire sur un Link
 
-Things you may want to cover:
+Créer un User (`julie = User.new`) et lui associer un Link (`coucou = Link.new`)
 
-* Ruby version
+Créer un autre User (par exemple franck =`User.new`)
 
-* System dependencies
+Créer un Comment (`salut = Comment.new`) et lui associer franck en User.
 
-* Configuration
+Puis associer salut à coucou
+`salut.__commentable__ = coucou`
 
-* Database creation
+## Pour commenter un commentaire
 
-* Database initialization
+Créer un autre Comment (super) et lui associer julie en User (super.user = julie)
 
-* How to run the test suite
+Puis associer super à salut
+`super.__commentable__ = salut`
 
-* Services (job queues, cache servers, search engines, etc.)
+Et voilà :)
 
-* Deployment instructions
-
-* ...
