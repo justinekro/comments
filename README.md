@@ -9,14 +9,14 @@ Créer un autre User (par exemple franck =`User.new`)
 Créer un Comment (`salut = Comment.new`) et lui associer franck en User.
 
 Puis associer salut à coucou
-`salut.__commentable__ = coucou`
+`salut.commentable = coucou`
 
 ## Pour commenter un commentaire
 
 Créer un autre Comment (super) et lui associer julie en User (super.user = julie)
 
 Puis associer super à salut
-`super.__commentable__ = salut`
+`super.commentable = salut`
 
 Et voilà :)
 
